@@ -6,19 +6,18 @@ public record Registration
 {
     // Properties
     public DependencyInjectionLifecycle DependencyInjectionLifecycle { get; }
-    public Type? AbstractionType { get; }
+    public Type? ServiceType { get; }
     public Type? ConcreteType { get; }
 
     // Constructors
     public Registration(
         DependencyInjectionLifecycle dependencyInjectionLifecycle,
-        Type? abstractionType,
+        Type? serviceType,
         Type? concreteType
     )
     {
         DependencyInjectionLifecycle = dependencyInjectionLifecycle;
-        AbstractionType = abstractionType;
+        ServiceType = serviceType;
         ConcreteType = concreteType;
     }
-
 }
