@@ -2,7 +2,7 @@
 
 namespace MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions.Models;
 
-public readonly struct Registration
+public readonly record struct Registration
 {
     // Properties
     public DependencyInjectionLifecycle DependencyInjectionLifecycle { get; }
